@@ -1,0 +1,22 @@
+h1 {
+  color: blue;
+  font-size: 80px;
+  span {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &::before,&::after {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: red;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
