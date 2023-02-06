@@ -1,0 +1,22 @@
+h1 {
+  color: blue;
+  font-size: 80px;
+}
+h1 span {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+h1 span::before, h1 span::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: red;
+}
+h1 span::before {
+  transform: rotate(45deg);
+}
+h1 span::after {
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=style.css.map */
